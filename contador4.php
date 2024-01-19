@@ -23,5 +23,5 @@ $resultat = $conn->query("SELECT COUNT(*) FROM registre");
 $row = mysqli_fetch_array($resultat);
 echo $row[0];
 
-$conn-›close();
+$conn->close();
 ?>
