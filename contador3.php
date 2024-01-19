@@ -4,7 +4,7 @@ $contador = 0;
 
 // Intenta obrir el fitxer en mode lectura
 if ($fd = fopen('counter.txt', 'r')) {
-    $contador = fgets($fd);
+    $contador = intval(fgets($fd)); // Converteix la cadena a un enter
     fclose($fd);
 }
 
